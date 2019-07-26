@@ -14,9 +14,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "El Messiri", Arial, Helvetica, sans-serif}
   padding: 16px;
 }
 .mySlides {display:none}
-.w3-tag, .fa {cursor:pointer}
+.w3-tag, .fa {cursor:pointer;}
 .w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
 .w3-row-padding img {margin-bottom: 12px}
+.zoom{cursor:pointer;}
 
 .zoom:hover {
   -ms-transform: scale(1.5); /* IE 9 */
@@ -60,14 +61,16 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "El Messiri", Arial, Helvetica, sans-serif}
   color: white;
   font-size: 16px;
   padding: 16px 32px;
+  border:2px solid white
 }
 .text {
   font-size: 80px;
   color: #fff;
   text-align: center;
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  transition: 0.2s;
+  /* -webkit-animation: glow 1s ease-in-out infinite alternate;
   -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate; */
 }
 
 @-webkit-keyframes glow {
@@ -79,20 +82,25 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "El Messiri", Arial, Helvetica, sans-serif}
     text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
   }
 }
-
-
-
+.push{
+  margin-top:100px;
+}
+/* img{
+  width: 100%;
+} */
+.skill1{width: 90%;}
+.skill2{width: 95%;}
+.skill3{width: 95%;}
+.griph{margin:0 -16px;}
+.modal01{padding-top:0;}
+.tamas{padding:64px 16px;}
 </style>
-<body  >
-    
-<!-- <div class="w3-container  w3-center w3-padding-32 w3-pale-blue">
-     <h2 class="w3-wide" >SaharGodrat_Art</h2>
-     <p class="w3-xlarge">به گالری نقاشی سحر خوش آمدید</p>
-</div> -->
+<body>
+
 <!-- Links (sit on top) -->
 <div class="w3-top  w3-card" id="myTop" >
 
-        <div class="w3-row w3-large w3-card w3-black">
+        <div class="w3-row w3-medium w3-card w3-black">
           <div class="w3-col s3">
             <a href="#" class="w3-button w3-block">گالری سحر</a>
           </div>
@@ -108,7 +116,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "El Messiri", Arial, Helvetica, sans-serif}
         </div>
       </div>
       
-  <div  style="margin-top:120px"></div>
+  <div class="push"  ></div>
   <div id="page" class="w3-content">
     <!-- home -->
       <div class="w3-padding-32 " id="Home">
@@ -126,7 +134,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "El Messiri", Arial, Helvetica, sans-serif}
           <img src="
           https://dl.dropboxusercontent.com/s/p54zgo3atc71614/S%DB%B9%DB%B0%DB%B7%DB%B2%DB%B3-%DB%B1%DB%B8%DB%B2%DB%B5%DB%B5%DB%B8%281%29.jpg" style="width:100%">
           <div class="w3-display-middle w3-container w3-padding-32">
-            <span class="w3-white w3-padding-large w3-animate-bottom">تابلو با گل های برجسته</span>
+            <span class="w3-white w3-right-align w3-padding w3-animate-bottom">تابلو با گل های برجسته</span>
           </div>
         </div>
         <div class="w3-display-container mySlides">
@@ -165,7 +173,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "El Messiri", Arial, Helvetica, sans-serif}
     </div>
     <div class="w3-col w3-margin-top m4 w3-light-grey w3-container w3-padding-16 ">
       <h3 class="w3-right-align">سفارش طراحی چهره در سایزهای مختلف</h3>
-      <button onclick="myFunction('Demo1')" class="w3-btn   w3-left-align"><p> <i class="fa fa-arrow-down w3-text-blue w3-large"></i></p></button>
+      <button onclick="myFunction('Demo1')" class="w3-btn   w3-left-align"><p> <i class="	fa fa-angle-down w3-text-blue w3-xxlarge"></i></p></button>
       <div id="Demo1" class="w3-margin-top w3-animate-top w3-hide">
       <ul class="w3-ul w3-hoverable  w3-white  w3-center w3-hover-shadow">
         <li class=" w3-large w3-padding-32">انواع سفارشات شما با بهترین کیفیت و قیمتی مناسب و در هر سایزی پدیرفته میشود.</li>
@@ -175,7 +183,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "El Messiri", Arial, Helvetica, sans-serif}
 
     <div class="w3-col w3-margin-top  m4 w3-grey w3-container w3-padding-16">
       <h3 class="w3-right-align" >برگزاری کلاس های تخصصی طراحی و نقاشی</h3>
-      <button onclick="myFunction('Demo2')" class="w3-btn   w3-left-align"><p> <i class="fa fa-arrow-down w3-text-blue w3-large"></i></p></button>
+      <button onclick="myFunction('Demo2')" class="w3-btn   w3-left-align"><p> <i class="	fa fa-angle-down w3-text-blue w3-xxlarge"></i></p></button>
       <div id="Demo2" class=" w3-margin-top w3-animate-top w3-hide">
       <ul class="w3-ul  w3-hoverable w3-white  w3-center w3-hover-shadow">
         <li class=" w3-large w3-padding-32">آموزش طراحی چهره به سبک سیاه قلم برای تمامی سنین</li>
@@ -190,7 +198,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "El Messiri", Arial, Helvetica, sans-serif}
 
     <div class="w3-col w3-margin-top  m4 w3-dark-grey w3-container w3-padding-16">
       <h3 class="w3-right-align">کلاس های ویژه کودکان 4 سال به بالا</h3>
-      <button onclick="myFunction('Demo3')" class="w3-btn   w3-left-align"><p> <i class="fa fa-arrow-down w3-text-blue w3-large"></i></p></button>
+      <button onclick="myFunction('Demo3')" class="w3-btn   w3-left-align"><p> <i class="	fa fa-angle-down w3-text-blue w3-xxlarge"></i></p></button>
       <div id="Demo3" class=" w3-margin-top w3-animate-top   w3-hide">
       <ul class="w3-ul w3-hoverable  w3-white  w3-center w3-hover-shadow">
         <li class=" w3-large w3-padding-32">آموزش سبک و تکنیک های مختلف نقاشی</li>
@@ -228,15 +236,15 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "El Messiri", Arial, Helvetica, sans-serif}
 <h2 class="w3-container w3-right-align w3-padding-32"  > مهارت های من</h2>
 <p class="w3-wide"><i class="fa fa-camera w3-margin-right"></i>عکاسی</p>
       <div class="w3-grey">
-        <div class="w3-container w3-dark-grey w3-center" style="width:90%">90%</div>
+        <div class="w3-container skill1 w3-dark-grey w3-center" >90%</div>
       </div>
       <p class="w3-wide"><i class="fa fa-paint w3-margin-right"></i>طراحی چهره</p>
       <div class="w3-grey">
-        <div class="w3-container w3-dark-grey w3-center" style="width:95%">95%</div>
+        <div class="w3-container w3-dark-grey skill2 w3-center" >95%</div>
       </div>
       <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>نقاشی</p>
       <div class="w3-grey">
-        <div class="w3-container w3-dark-grey w3-center" style="width:95%">95%</div>
+        <div class="w3-container w3-dark-grey skill3 w3-center" >95%</div>
       </div>
       </div>
       </div>
@@ -248,7 +256,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "El Messiri", Arial, Helvetica, sans-serif}
     
   
       <!-- Grid for photos -->
-      <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-row-padding griph" >
         <div  class="w3-col s6">
           <img src="https://dl.dropboxusercontent.com/s/j6x77i5w7f3ts3z/S%DB%B9%DB%B0%DB%B7%DB%B2%DB%B3-%DB%B1%DB%B8%DB%B2%DB%B1%DB%B3%DB%B7%281%29.jpg"
           onclick="onClick(this)" alt="گالری سحر قدرت" class="zoom" style="width:100%">
@@ -284,7 +292,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "El Messiri", Arial, Helvetica, sans-serif}
     <!-- End Portfolio Section -->
     </div>
     <!-- Modal for full size images on click-->
-  <div id="modal01" class="w3-modal w3-black" style="padding-top:0"  onclick="this.style.display='none'">
+  <div id="modal01" class="w3-modal modal01 w3-black"  onclick="this.style.display='none'">
       <span class="w3-button w3-black w3-xlarge  w3-display-topright">×</span>
       <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent  w3-padding-64">
         <img id="img01" class="w3-image">
@@ -294,7 +302,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "El Messiri", Arial, Helvetica, sans-serif}
     <!-- Contact Section -->
     <div class="w3-padding-32  " id="contact">
       
-<div class="w3-container w3-dark-grey" style="padding:64px 16px" id="contact">
+<div class="w3-container tamas w3-dark-grey" >
   
     <h3 class="w3-center">ارتباط با من</h3>
     <p class="w3-center w3-large">در شبکه های اجتماعی به من پیام دهید.</p>
